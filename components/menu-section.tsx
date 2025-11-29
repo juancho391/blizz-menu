@@ -17,7 +17,7 @@ export default function MenuSection() {
       id: 1,
       name: "Blizz Smash",
       description: "Deliciosa Smash Burguer",
-      price: 18000,
+      price: 20000,
       image: "/smash.png",
       ingredients: [
         "Pan brioche ",
