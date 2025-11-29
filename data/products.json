@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Blizz Smash",
+      "description": "Deliciosa Smash Burguer",
+      "price": 18000,
+      "image": "/smash.png",
+      "ingredients": ["Pan brioche ", "Carne De Res", "Queso cheddar derretido", "Salsa"]
+    }
+  ]
+}
