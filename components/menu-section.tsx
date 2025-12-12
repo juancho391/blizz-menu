@@ -7,6 +7,7 @@ interface Product {
   name: string;
   description: string;
   price: number;
+  comboPrice: number;
   image: string;
   ingredients: string[];
 }
@@ -17,14 +18,48 @@ export default function MenuSection() {
       id: 1,
       name: "Blizz Smash",
       description: "Deliciosa Smash Burguer",
-      price: 20000,
+      price: 25000,
       image: "/smash.png",
       ingredients: [
-        "Pan brioche ",
+        "Pan brioche",
         "Carne De Res",
-        "Queso cheddar derretido",
+        "Queso cheddar",
+        "Salsa de la casa",
+        "Pepinillos",
+      ],
+      comboPrice: 25000,
+    },
+    {
+      id: 2,
+      name: "Fresh Blizz",
+      description: "Deliciosa Fresh Burguer clasica",
+      price: 18000,
+      image: "/freshBlizz.png",
+      ingredients: [
+        "Pan brioche",
+        "Carne Angus",
+        "Queso",
+        "Tomate",
+        "Lechuga",
         "Salsa de la casa",
       ],
+      comboPrice: 23000,
+    },
+    {
+      id: 3,
+      name: "Tropical Blizz",
+      description: "Deliciosa Tropical Burguer",
+      price: 20000,
+      image: "/tropical.png",
+      ingredients: [
+        "Pan brioche",
+        "Carne Angus",
+        "Queso Americano",
+        "Piña en rodajas",
+        "Salsa de la casa",
+        "Tocineta",
+      ],
+      comboPrice: 25000,
     },
   ];
   const [products, setProducts] = useState<Product[]>([]);
@@ -105,8 +140,12 @@ export default function MenuSection() {
               {/* Precio */}
               <div className="p-4 bg-gradient-to-r from-yellow-500/10 to-red-500/10 border border-yellow-400/30 rounded-xl">
                 <p className="text-gray-300 text-sm">Precio</p>
-                <p className="text-4xl font-black text-yellow-400">
+                <p className="text-4xl font-black text-red-500">
                   ${product.price.toFixed(0)}
+                </p>
+                <p className="text-gray-300 text-sm">Precio Combo</p>
+                <p className="text-4xl font-black text-yellow-400">
+                  ${product.comboPrice.toFixed(0)}
                 </p>
               </div>
             </div>

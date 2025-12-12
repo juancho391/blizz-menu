@@ -60,11 +60,11 @@ export default function HeroSection({ isLoaded }: HeroSectionProps) {
             <div className="absolute inset-0 bg-gradient-to-br from-red-500/30 via-yellow-400/20 to-transparent rounded-full blur-3xl animate-pulse"></div>
 
             {/* Contenedor de hamburguesa con animación flotante */}
-            <div className="absolute inset-0 flex items-center justify-center animate-float ">
+            <div className="absolute inset-0 flex items-center justify-center animate-float">
               <img
                 src="/smash.png"
                 alt="Blizz Burger"
-                className="w-full h-full object-contain drop-shadow-2xl "
+                className="w-full h-full object-contain drop-shadow-2xl"
               />
             </div>
 
