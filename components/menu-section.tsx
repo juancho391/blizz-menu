@@ -43,8 +43,9 @@ export default function MenuSection() {
         "Tomate",
         "Lechuga",
         "Salsa de la casa",
+        "Cebolla Caramelizada",
       ],
-      comboPrice: 23000,
+      comboPrice: 24000,
     },
     {
       id: 3,
