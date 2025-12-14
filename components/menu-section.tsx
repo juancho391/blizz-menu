@@ -143,7 +143,7 @@ export default function MenuSection() {
                 <p className="text-4xl font-black text-red-500">
                   ${product.price.toFixed(0)}
                 </p>
-                <p className="text-gray-300 text-sm">Precio Combo</p>
+                <p className="text-gray-300 text-sm">Con Papas + Gaseosa</p>
                 <p className="text-4xl font-black text-yellow-400">
                   ${product.comboPrice.toFixed(0)}
                 </p>
