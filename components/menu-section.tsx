@@ -26,6 +26,7 @@ export default function MenuSection() {
         "Queso cheddar",
         "Salsa de la casa",
         "Pepinillos",
+        "Cebolla Caramelizada",
       ],
       comboPrice: 25000,
     },
