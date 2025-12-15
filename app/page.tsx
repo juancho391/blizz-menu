@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import HeroSection from "@/components/hero-section";
 import MenuSection from "@/components/menu-section";
-import ComingSoonSection from "@/components/coming-soon-section";
 import Header from "@/components/header";
 
 export default function Home() {
