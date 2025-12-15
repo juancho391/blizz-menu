@@ -12,17 +12,14 @@ export default function Header() {
           </div>
         </div>
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#menu" className="text-white hover:text-yellow-400 transition-colors font-semibold">
+          <a
+            href="#menu"
+            className="text-white hover:text-yellow-400 transition-colors font-semibold"
+          >
             Menu
           </a>
-          <a href="#pronto" className="text-white hover:text-yellow-400 transition-colors font-semibold">
-            Próximamente
-          </a>
-          <button className="px-6 py-2 bg-red-500 hover:bg-red-600 text-white font-bold rounded-full transition-all transform hover:scale-105 active:scale-95">
-            Contacto
-          </button>
         </nav>
       </div>
     </header>
-  )
+  );
 }
