@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import HeroSection from "@/components/hero-section"
-import MenuSection from "@/components/menu-section"
-import ComingSoonSection from "@/components/coming-soon-section"
-import Header from "@/components/header"
+import { useState, useEffect } from "react";
+import HeroSection from "@/components/hero-section";
+import MenuSection from "@/components/menu-section";
+import ComingSoonSection from "@/components/coming-soon-section";
+import Header from "@/components/header";
 
 export default function Home() {
-  const [isLoaded, setIsLoaded] = useState(false)
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    setIsLoaded(true)
-  }, [])
+    setIsLoaded(true);
+  }, []);
 
   return (
     <div className="min-h-screen bg-black overflow-hidden">
@@ -49,7 +49,6 @@ export default function Home() {
         <Header />
         <HeroSection isLoaded={isLoaded} />
         <MenuSection />
-        <ComingSoonSection />
       </div>
 
       <style jsx>{`
@@ -66,5 +65,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
